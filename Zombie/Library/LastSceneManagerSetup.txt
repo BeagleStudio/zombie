@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Zombie.unity
+- path: Assets/Scene/Underground.unity
   isLoaded: 1
   isActive: 1
