@@ -73,8 +73,63 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="MeshTangents">
+      <HintPath>Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Utility\MeshTangents.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\CaveGeneratorEnclosed.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\CaveGeneratorIsometric.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\HeightMapFloor.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\HeightMapMain.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Core\MapConverter.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Core\MapSplitter.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Core\ObjectFactory.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Core\Tooltips.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Public\CaveGenerator.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Public\CaveMeshes.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Public\Grid.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Utility\Stopwatch.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\CaveGenerator\Utility\Threading.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\HeightMap\Core\HeightMap.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\HeightMap\Core\HeightMapDrawer.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\HeightMap\Core\Noise.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\HeightMap\Core\Tooltips.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\HeightMap\Public\ConstantHeightMap.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\HeightMap\Public\HeightMapBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Connectivity\ConnectionFinder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Connectivity\ConnectionInfo.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Connectivity\EdgeExtractor.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Connectivity\MST.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Connectivity\MapConnector.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Connectivity\UnionFind.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\GraphSearch\BFS.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\GraphSearch\TileRegion.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\MapBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Core\Tooltips.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Public\Coord.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Public\IMapGenerator.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Public\Map.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Public\MapGenerator.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MapGeneration\Public\MapParameters.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MarchingSquares\LocalPosition.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MarchingSquares\MapTriangulator.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MarchingSquares\VertexLookup.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshBuilders\CeilingBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshBuilders\EnclosureBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshBuilders\FloorBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshBuilders\IMeshBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshBuilders\WallBuilder.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshBuilders\WallPruner.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\MeshData.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\Outline\Outline.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\Outline\OutlineGenerator.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\Outline\Triangle.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\Outline\TriangleLookup.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Core\VertexIndex.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Public\IHeightMap.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Public\MeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Public\WallGrid.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />

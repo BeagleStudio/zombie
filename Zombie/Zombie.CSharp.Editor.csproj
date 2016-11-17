@@ -115,11 +115,22 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="MeshTangents">
+      <HintPath>Assets\Plugins\Procedural-Cave-Generator-master\Internal\MeshGeneration\Utility\MeshTangents.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Zombie.CSharp.Plugins.csproj">
       <Project>{FD3DC3C7-1C83-0DE0-ADCB-5EC45391107B}</Project>
       <Name>Zombie.CSharp.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zombie.CSharp.csproj">
+      <Project>{FCD93EB5-DA56-2AF1-0F49-65BB451EC132}</Project>
+      <Name>Zombie.CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zombie.CSharp.Editor.Plugins.csproj">
+      <Project>{68756324-10EF-DB75-F647-A2403D74A557}</Project>
+      <Name>Zombie.CSharp.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
